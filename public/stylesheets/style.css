@@ -31,7 +31,7 @@ form button {
 }
 
 #chatInput{
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -81,4 +81,13 @@ li {
 .userNotofication {
     text-align: center;
     background: rgb(130, 224, 255);
+}
+
+.chat-popup {
+    position: fixed;
+    height: 23%;
+    width: 40%;
+    bottom: 0;
+    right: 0;
+    border: solid;
 }

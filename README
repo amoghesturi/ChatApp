@@ -1,0 +1,9 @@
+// Copy paste the following code in your website console.
+// Becuase localhost is using http, please allow mixed content in your page url bar for the first time
+
+(function() {
+    var script = document.createElement("SCRIPT");
+    script.src = 'http://localhost:3000/js/popup.js';
+    script.type = 'text/javascript';
+    document.getElementsByTagName("body")[0].appendChild(script);
+})();
