@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 13px Helvetica, Arial;
+    width: 100%;
+    background-color: white;
+}
+
+form {
+    background: #000;
+    padding: 3px;
+    width: 100%;
+}
+
+form input {
+    border: 0;
+    padding: 10px;
+    width: 90%;
+    margin-right: .5%;
+}
+
+form button {
+    width: 9%;
+    background: rgb(130, 224, 255);
+    border: none;
+    padding: 10px;
+}
+
+#chatInput{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#newUser{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#ul {
+    list-style-type: none;
+    background-color: white;
+}
+
+li {
+    padding: 5px 10px;
+}
+
+.chat li:nth-child(even) {
+    background-color: lightgrey;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.right {
+    float: right;
+    width: 20%;
+    background: whitesmoke;
+    overflow-y: scroll;
+    padding: 3px;
+}
+
+.left {
+    float: left;
+    width: 80%;
+    overflow-y: scroll;
+    padding: 3px;
+}
+
+.self {
+    text-align: right;
+}
+
+.userNotofication {
+    text-align: center;
+    background: rgb(130, 224, 255);
+}

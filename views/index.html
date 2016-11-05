@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<div id="header" style="height: 10%">
+    <div id="newUser">
+        <h2>Enter your Nickname</h2>
+        <div id="nickName">
+            <form action="">
+                <input maxlength="8"><button>Chat</button>
+            </form>
+        </div>
+    </div>
+    <div id="currentUser" hidden>
+        <h2 id="name"></h2>
+    </div>
+</div>
+
+<div class="container" width="100%" style="height: 80%">
+    <div class="left">
+        <ul id="messages" hidden></ul>
+    </div>
+    <div class="right">
+        <ul id="activeUsers"></ul>
+    </div>
+</div>
+
+<div id="chatInput" hidden>
+    <form action="">
+        <input id="m" autocomplete="off"/><button>Send</button>
+    </form>
+</div>
+
+
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="/js/chat-client.js"></script>
+</body>
+</html>
